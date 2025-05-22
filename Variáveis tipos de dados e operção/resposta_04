@@ -1,0 +1,15 @@
+#include<stdio.h>
+#include<string.h>//biblioteca que possibilita criação/manipulção de strings
+
+int main(){
+	char nome [50]="Victor";
+	char sobrenome[50]="Hugo";
+	char nomeCompleto[100];
+	
+	
+	strcpy(nomeCompleto, nome); //função que copia o nome
+	strcat(nomeCompleto, " ");   // função que adiciona o espaço
+	strcat(nomeCompleto, sobrenome);// função que adiciona o sobrenome
+	
+ printf("Nome completo: %s\n", nomeCompleto);
+}
